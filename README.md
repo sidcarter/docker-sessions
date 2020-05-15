@@ -37,13 +37,13 @@ Output of apt-cache policy docker-ce
 
     docker-ce:
       Installed: (none)
-      Candidate: 18.06.1~ce~3-0~ubuntu
+      Candidate: 5:19.03.8~3-0~ubuntu-bionic
       Version table:
-         18.06.1~ce~3-0~ubuntu 500
-            500 https://download.docker.com/linux/ubuntu xenial/stable amd64 Packages
+     *** 5:19.03.8~3-0~ubuntu-bionic 500
+            500 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages
 
 
-Notice that docker-ce is not installed, but the candidate for installation is from the Docker repository for Ubuntu 16.04 (xenial).
+Notice that docker-ce is not installed, but the candidate for installation is from the Docker repository for Ubuntu 18.04 (bionic).
 
 Finally, install Docker:
 
