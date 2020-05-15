@@ -2,7 +2,7 @@
 
 Step 1 — Installing Docker
 
-The Docker installation package available in the official Ubuntu 16.04 repository may not be the latest version. To get this latest version, install Docker from the official Docker repository. This section shows you how to do just that.
+The Docker installation package available in the official Ubuntu 18.04 repository may not be the latest version. To get this latest version, install Docker from the official Docker repository. This section shows you how to do just that.
 
 To begin, remove any existing docker installations:
 
@@ -16,6 +16,10 @@ Then, in order to ensure the downloads are valid, add the GPG key for the offici
 
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
+Verify that the key got added using the following command:
+
+    sudo apt-key fingerprint 0EBFCD88
+
 Add the Docker repository to APT sources:
 
     sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
@@ -24,7 +28,7 @@ Next, update the package database with the Docker packages from the newly added 
 
     sudo apt-get update
 
-Make sure you are about to install from the Docker repo instead of the default Ubuntu 16.04 repo:
+Make sure you are about to install from the Docker repo instead of the default Ubuntu 18.04 repo:
 
     apt-cache policy docker-ce
 
@@ -45,23 +49,20 @@ Finally, install Docker:
 
     sudo apt-get install -y docker-ce
 
-
 Docker should now be installed, the daemon started, and the process enabled to start on boot. Check that it's running:
 
     sudo systemctl status docker
 
 The output should be similar to the following, showing that the service is active and running:
 
-Output
-
     ● docker.service - Docker Application Container Engine
        Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
-       Active: active (running) since Thu 2018-10-18 20:28:23 UTC; 35s ago
+       Active: active (running) since Thu 2020-05-14 21:30:38 EDT; 2min 1s ago
          Docs: https://docs.docker.com
-     Main PID: 13412 (dockerd)
+     Main PID: 19779 (dockerd)
+        Tasks: 25
        CGroup: /system.slice/docker.service
-               ├─13412 /usr/bin/dockerd -H fd://
-               └─13421 docker-containerd --config /var/run/docker/containerd/containerd.toml
+               └─19779 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
 
-Installing Docker now gives you not just the Docker service (daemon) but also the docker command line utility, or the Docker client. We'll explore how to use the docker command later in this tutorial.
+Installing Docker installs both Docker service (daemon) and the docker command line utility, or the Docker client.
 
