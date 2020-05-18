@@ -1,5 +1,7 @@
 FROM python:3
 
+LABEL maintainer "Khader Syed <whodat@chapter63.com>"
+
 # set a directory for the app
 WORKDIR /usr/src/app
 
