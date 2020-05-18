@@ -10,6 +10,7 @@ Add your user to the docker group:
 
 Update permissions on local docker folder, if you encounter errors:
 
+    $ mkdir .docker
     $ sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
     $ sudo chmod g+rwx "$HOME/.docker" -R
 
