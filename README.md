@@ -8,7 +8,7 @@ To begin, remove any existing docker installations:
 
 Next, install packages we require to install the official docker version:
 
-    sudo apt-get ca-certificates apt-transport-https curl gnupg-agent software-properties-common
+    sudo apt-get install -qy ca-certificates apt-transport-https curl gnupg-agent software-properties-common
 
 Then, in order to ensure the downloads are valid, add the GPG key for the official Docker repository to your system:
 
