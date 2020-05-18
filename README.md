@@ -64,3 +64,4 @@ The output should be similar to the following, showing that the service is activ
 
 Installing Docker installs both Docker service (daemon) and the docker command line utility, or the Docker client.
 
+[Instructions on running docker as a non-root user](RUN_AS_USER.md)
