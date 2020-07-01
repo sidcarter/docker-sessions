@@ -1,4 +1,4 @@
-# Setup AWS
+# Elastic Container Registry (ECR) on AWS
 
 ## New AWS Account
 
