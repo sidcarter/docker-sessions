@@ -15,5 +15,4 @@
     - Attach the `AmazonEC2ContainerRegistryFullAccess` Policy
   - ECRUser
     - Attach the `AmazonEC2ContainerRegistryReadOnly` Policy
-- Create users and add those users to the groups created above - https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups_manage_add-remove-users.html
-  - Creating IAM users - https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console
+- Create users and add those users to the groups created above - https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console
