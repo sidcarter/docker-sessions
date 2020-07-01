@@ -7,7 +7,7 @@
   - Save your root credentials in a safe location, for e.g in a password manager like 1Password or LastPass
 - After creating the account, setup MFA on your root account - https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html#enable-virt-mfa-for-root
 
-Note that all new AWS accounts are on the free tier and these services are available for free or at a reduced cost - https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc
+Note that all new AWS accounts are on the free tier and these services are available for free or at a reduced cost for at least a year - https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc
 
 ## IAM Setup
 
