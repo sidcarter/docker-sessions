@@ -9,10 +9,8 @@
 
 ## IAM Setup
 
-- Once the root user and account is setup, setup Administrators Group - https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html
-- Create three groups and attach the respective ECR policies
-  - Administrators
-    - Attach the `AdministratorAccess` Policy
+- Once the root user and account is setup, setup Administrator User and Group - https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html
+- Create two additional groups and attach the respective ECR policies
   - Developer or Poweruser
     - Attach the `AmazonEC2ContainerRegistryFullAccess` Policy
   - ECRUser
