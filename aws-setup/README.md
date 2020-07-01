@@ -21,6 +21,7 @@
 ## User Login and AWS CLI Setup
 
 - Once the users have been created, they should be able to login with their temporary passwords.
+  - Install AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
   - Create Access Keys to use AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-creds
   - Configure your local AWS credentials using the keys created in the step above - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
 - If your AWS CLI setup was successful, you should be able to run `aws sts get-caller-identity` and the output should look like this:
