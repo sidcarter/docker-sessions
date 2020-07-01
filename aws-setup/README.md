@@ -16,3 +16,10 @@
   - ECRUser
     - Attach the `AmazonEC2ContainerRegistryReadOnly` Policy
 - Create users and add those users to the groups created above - https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html#id_users_create_console
+  - Skip Permissions Boundary when creating new users (not required for now)
+
+## User Login and ECR Tests
+
+- Once the users have been created, they should be able to login with their temporary passwords.
+  - Create Access Keys to use AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-creds
+  - Configure your local AWS credentials using the keys created in the step above - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
