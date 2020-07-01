@@ -23,6 +23,15 @@
 - Once the users have been created, they should be able to login with their temporary passwords.
   - Create Access Keys to use AWS CLI - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-creds
   - Configure your local AWS credentials using the keys created in the step above - https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html
+- If your AWS CLI setup was successful, you should be able to run `aws sts get-caller-identity` and the output should look like this:
+
+```json
+{
+  "UserId": "AJLKAJ2JHJH2342",
+  "Account": "7987289479",
+  "Arn": "arn:aws:iam::7987289479:user/my_username"
+}
+```
 
 ## ECR Login and Docker Push
 
